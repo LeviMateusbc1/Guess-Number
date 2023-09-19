@@ -50,3 +50,4 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector("body").style.backgroundColor = "#5749d6";
   document.querySelector(".number").style.width = "15rem";
 });
+//teste
