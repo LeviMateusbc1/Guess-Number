@@ -1,0 +1,6 @@
+Alert("") printa uma mensagem ao ir para a tela
+script inside html makes the JavaScript works
+"Use strict" let us know if there are mistakes in the code, always use on the op of the code
+it doesn't allow to create some variable with names like, if, private..
+return console.log("Your age is ", CurrentYear - BirthYear);
+};
