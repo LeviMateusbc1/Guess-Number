@@ -2,5 +2,29 @@ Alert("") printa uma mensagem ao ir para a tela
 script inside html makes the JavaScript works
 "Use strict" let us know if there are mistakes in the code, always use on the op of the code
 it doesn't allow to create some variable with names like, if, private..
-return console.log("Your age is ", CurrentYear - BirthYear);
-};
+        scopo
+If we create a global variable, we have to create this in the top of the code.And a function is only executed if we call this.Js Aloow to pass function as a parameter as well, like in a eventListener, it's possible pass a function and after pressing the Evenet the funcion automatically will be called. Variables exist only inside a fucntion, if we want that they become global, we create them in the top of the code and inside a function we set values for them
+   Global Scope:Outside any function or block, variables  declared in global  scope  are accessible  everywhere, inside functions or blocks
+   Function scope: Also called local scope, variables are accessible only inside the function
+   function block: examples: if, else, for, while.. The variable are accessible only inside the block. ONLY const and let are restricted to the block in which they were created. If we create a var variable will still be accessible 
+
+let and const are block variables, this means they only work inside a block,if,else,function.. If you set them inside a block and call outside it will be not declared
+
+
+                                Var vs const vs let
+        if we do this:
+        console.log(a) it will be uncaught and will return the message: cannot acces the variable before the inicialization
+        console.log(b)
+        console.log(c) Here will be undefined
+        var c = 10
+        const b =3
+        let a=5,
+                                The same happens with functions
+        If we create functions, with three different ways
+        If we call add1 it will work out, but if we call add2 Won't work out and will return the same erros as above. The same works for var as above
+        function add1(a,b){
+                return a+b
+        }
+        const add2 = (a,b)=>{
+                return a+b
+        }
