@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-let variable1 = 50;
-console.log(variable1);
-alert("Hello JS");
-console.log(typeof variable1); //This will return the type of the variable
-=======
 "use strick";
 let SecretNumber = Math.trunc(Math.random() * 30) + 1;
 let score = 30;
@@ -56,5 +50,3 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector("body").style.backgroundColor = "#5749d6";
   document.querySelector(".number").style.width = "15rem";
 });
-//teste
->>>>>>> 519674445c8d17fb3a6a5591e49260a27ba0d457
