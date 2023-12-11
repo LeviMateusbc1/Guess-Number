@@ -117,3 +117,34 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+
+/* Medium Devices (tablets) */
+@media screen and (min-width: 490px) and (max-width: 730px) {
+ 
+  .message,
+  .label-score,
+  .label-highscore{
+    font-size: 15px;
+    margin-left: 15px;
+  }
+        /* <p class="label-score">💯 Score: <span class="score">30</span></p>
+        <p class="label-highscore"> */
+}
+@media (max-width: 490px) {
+  .message,
+  .label-score,
+  .label-highscore,
+  .between{
+    font-size: 10px;
+    margin-left: 10px;
+  }
+ .btn,
+ .again{
+  font-size: 10px;
+ }
+ .guess{
+  width: 170px;
+  height: 7.5rem;
+} 
+}

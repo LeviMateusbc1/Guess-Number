@@ -5,9 +5,23 @@ let highScore = 0;
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess, typeof guess);
-  if (!guess) {
+  if (!guess && guess !== 0 ) {
     document.querySelector(".message").textContent = "no number 😣";
-  } else if (guess > SecretNumber) {
+  } 
+  else if(guess <=0 ){
+    
+    if (score > 1) {
+      document.querySelector(".message").textContent =
+      " Wrong answer 😕 number between 1 and 30 ";
+      score--;
+      document.querySelector(".score").textContent = score;
+    } else {
+      score = 0;
+      document.querySelector(".score").textContent = score;
+      document.querySelector(".message").textContent = "you lost the game 😥";
+    }
+  }
+  else if (guess > SecretNumber && guess <=30) {
     if (score > 1) {
       document.querySelector(".message").textContent =
         " Wrong answer 😕 number too high";
@@ -18,7 +32,20 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".score").textContent = score;
       document.querySelector(".message").textContent = "you lost the game 😥";
     }
-  } else if (guess < SecretNumber) {
+  } 
+  else if (guess > 30) {
+    if (score > 1) {
+      document.querySelector(".message").textContent =
+        " Wrong answer 😕 number between 1 and 30";
+      score--;
+      document.querySelector(".score").textContent = score;
+    } else {
+      score = 0;
+      document.querySelector(".score").textContent = score;
+      document.querySelector(".message").textContent = "you lost the game 😥";
+    }
+  }
+  else if (guess < SecretNumber) {
     if (score > 1) {
       document.querySelector(".message").textContent =
         "Wrong answer 😑 number too low";
